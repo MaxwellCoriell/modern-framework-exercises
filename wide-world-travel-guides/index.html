@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>WWTG: Part 2</title>
+	<link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body ng-app="travelGuideApp">
+	<div ng-controller="bookCtrl"> <!-- calls the bookCtrl.js here -->
+	    <header>
+	    	<h1><strong><u>{{title}}</u></strong></h1>
+	    </header>
+		  <main id="wrapper">
+    		 <!-- makes the cards loop and populate here -->
+      		<div class="col-md-4" ng-repeat="guide in guides">
+        		<h3>{{guide.title}}</h3>
+        		<h4>Type: {{guide.type}}</h4>
+        		<h5>$ {{guide.price}}</h5>
+      		</div>
+      </main>
+
+      	
+      	<footer id="page-foot">
+      		<p>&copy; 2017 Max B.</p>
+      	</footer>
+
+
+<!-- javascripts needed for the app to function -->
+<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/firebase/firebase.js"></script>
+
+<!-- main javascript that makes the others work -->
+<script type="text/javascript" src="app/app.js"></script>
+
+<!-- factories that make the controller do stuff -->
+<script type="text/javascript" src="app/factories/guideFactory.js"></script>
+
+<!-- controllers that do stuff to the DOM -->
+<script type="text/javascript" src="app/controllers/bookCtrl.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+### Grunt Stuff ###
+lib/node_modules
+lib/bower_components
+*.sass-cache
+*.css.map
+
+### macOS ###
+*.DS_Store
