@@ -1,0 +1,15 @@
+<div ng-controller="bookCtrl">
+	<header>
+		<h1><strong><u>{{title}}</u></strong></h1>
+	</header>
+	<main class="container" id="wrapper">
+	  <div class="row">
+		 <!-- makes the cards loop and populate here -->
+			<div class="col-md-4" ng-repeat="guide in guides">
+	  		<h3>{{guide.title}}</h3>
+	  		<h4>Type: {{guide.type}}</h4>
+	  		<h5>$ {{guide.price}}</h5>
+			</div>
+	  </div>
+	</main>
+</div>

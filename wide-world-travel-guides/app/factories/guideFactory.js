@@ -7,6 +7,9 @@ app.factory("GuideStorage", function($q, $http) {
 			$http.get('../../data/guides.json')
 			.then(function(guides) {
 				resolve(guides);
+			})
+			.then(function(error) {
+				console.log(error);
 			});
 		});
 	};

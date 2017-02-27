@@ -3,8 +3,8 @@
 app.controller("bookCtrl", function($scope, GuideStorage) {
 	$scope.title = "Let These Books Be Your Guide";
 
-	$scope.guides = [];
-	console.log("getting guides ");
+	// $scope.guides = [];
+	// console.log("getting guides ");
 	
 	GuideStorage.loadGuides()
 	.then((guides) => {
@@ -12,3 +12,4 @@ app.controller("bookCtrl", function($scope, GuideStorage) {
 	});
 
 });
+
