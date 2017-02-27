@@ -1,0 +1,80 @@
+{
+    "doctors": [
+        {   "killigrew": {
+                "first_name": "Johan",
+                "last_name": "Killigrew",
+                "speciality": "Geriatrics"
+            }},
+        { "killebrew": {
+                "first_name": "Emrys",
+                "last_name": "Killebrew",
+                "speciality": "Genetics"
+            }},
+        { "tam": {
+                "first_name": "Simon",
+                "last_name": "Tam",
+                "speciality": "Interstellar Studies"
+            }},
+        { "shepard": {
+                "first_name": "Jack",
+                "last_name": "Shepard",
+                "speciality": "Emergency Trauma"
+            }}
+    ],
+    "patients": [
+        {
+                "first_name": "Margot",
+                "last_name": "Svenson",
+                "ailment": "Arthritis",
+                "doctor_id": "killigrew"
+            },
+        {
+                "first_name": "Ruby",
+                "last_name": "Meredith",
+                "ailment": "Arthritis",
+                "doctor_id": "killigrew"
+            },
+        { 
+                "first_name": "Wade",
+                "last_name": "Wilson",
+                "ailment": "Cancer",
+                "doctor_id": "killebrew"
+            },
+        { 
+                "first_name": "Francis",
+                "last_name": "Fanny",
+                "ailment": "Broken Limbs",
+                "doctor_id": "killebrew"
+            },
+        { 
+                "first_name": "River",
+                "last_name": "Tam",
+                "ailment": "Psychosis",
+                "doctor_id": "tam"
+            },
+        { 
+                "first_name": "Hoban",
+                "last_name": "Washburne",
+                "ailment": "Severe Burns",
+                "doctor_id": "tam"
+            },
+        { 
+                "first_name": "Malcolm",
+                "last_name": "Reynolds",
+                "ailment": "Gunshot",
+                "doctor_id": "tam"
+            },
+        { 
+                "first_name": "Kate",
+                "last_name": "Austin",
+                "ailment": "Plane Crash",
+                "doctor_id": "shepard"
+            },
+        {
+                "first_name": "John",
+                "last_name": "Locke",
+                "ailment": "Paralysis",
+                "doctor_id": "shepard"
+            }
+    ]
+}
