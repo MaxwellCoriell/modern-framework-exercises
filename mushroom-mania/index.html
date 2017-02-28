@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mushroomApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Mushroom Mania</title>
+	<link rel="stylesheet" type="text/css" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div ng-controller="mushCtrl">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
+					<input type="text" placeholder="Filter Here" class="form-control" ng-model="filterText">
+						<label class="radio-inline"><input type="radio" ng-model="lethality" name="poison-select" value="false">Poisonous</label>
+						<label class="radio-inline"><input type="radio" ng-model="lethality" name="poison-select" value="true">Non-Poisonous</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 main-container">
+					<div class="col-xs-12" ng-view>
+					<!-- partials go here! -->	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/bower_components/bootstrap/dist/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript" src="lib/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/angular-route/angular-route.min.js"></script>
+	
+	<script type="text/javascript" src="app/app.js"></script>
+
+	<script type="text/javascript" src="app/controllers/mushCtrl.js"></script>
+</body>
+</html>

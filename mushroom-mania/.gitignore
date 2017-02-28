@@ -1,0 +1,9 @@
+### Grunt Stuff ###
+lib/node_modules
+lib/bower_components
+
+### macOS ###
+*.DS_Store
+
+### data safety ### 
+app/values
